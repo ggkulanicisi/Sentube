@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NewSocial</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="welcome-screen">
+    <h1>NewSocial</h1>
+    <button onclick="startApp()">Giriş Yap</button>
+  </div>
+
+  <div id="app" class="hidden">
+    <header>
+      <h2>NewSocial</h2>
+      <input type="text" placeholder="Ara...">
+    </header>
+
+    <main>
+      <section class="new-post">
+        <textarea placeholder="Ne düşünüyorsun?"></textarea>
+        <input type="file" />
+        <button>Gönder</button>
+      </section>
+
+      <section class="feed">
+        <article class="post">
+          <p>Kullanıcı123: Merhaba dünya!</p>
+          <button>❤️</button>
+          <div class="comments">
+            <input type="text" placeholder="Yorum yaz...">
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <button>Ana Sayfa</button>
+        <button>Profil</button>
+        <button>Mesajlar</button>
+        <button>Takip</button>
+        <button>Admin</button>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
